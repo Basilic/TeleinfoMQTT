@@ -10,9 +10,9 @@ Ce dépôt est un backup de ma config pour intégrer la téléinformation dans H
 	* 90-teleinfo.rules: permet de crée un lien symbolique au périphérique pour évité les mélanges, a placer dans /etc/udev/rules.d
 
 
-##Installation:
+## Installation:
 
-###Dépendance:
+### Dépendance:
 
 * Python serial
 * Python paho-mqtt
@@ -25,6 +25,7 @@ Si le broker est sur la meme machine et qu'il n'est pas encore installé:
 
 '''sudo apt-get install mosquitto'''
 
+### Mise en place
 Déplacer le fichier Teleinfo.py dans /home/pi:
 
 '''
