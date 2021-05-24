@@ -29,7 +29,7 @@ Si le broker est sur la meme machine et qu'il n'est pas encore installé:
 Déplacer le fichier Teleinfo.py dans /home/pi:
 
 ```
-mv Teleinfo.py /home/pi
+mv Teleinfo.py /home/pi/Teleinfo.py
 ```
 
 Déplacer le fichier 90-teleinfl.rules dans /etc/udev/rules.d et actualiser l'udev avec la commande:
