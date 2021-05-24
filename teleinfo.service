@@ -1,0 +1,9 @@
+[Unit]
+Description=My script to monitor edf teleinformationthe
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python /home/pi/Teleinfo.py
+
+[Install]
+WantedBy=multi-user.target
