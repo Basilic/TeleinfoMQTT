@@ -11,21 +11,28 @@ Ce dépôt est un backup de ma config pour intégrer la téléinformation dans H
 
 
 ##Installation:
+
 ###Dépendance:
-*Python serial
-*Python paho-mqtt
+
+* Python serial
+* Python paho-mqtt
+
 '''
 sudo apt-get install python-pyserial python-paho-mqtt
 '''
+
 Si le broker est sur la meme machine et qu'il n'est pas encore installé:
+
 '''sudo apt-get install mosquitto'''
 
 Déplacer le fichier Teleinfo.py dans /home/pi:
+
 '''
 mv Teleinfo.py /home/pi
 '''
 
 Déplacer le fichier 90-teleinfl.rules dans /etc/udev/rules.d et actualiser l'udev avec la commande:
+
 '''
 sudo mv 90-teleinfo.rules /etc/udev/ruled.d/90-teleinfo.rules
 sudo udevadm control --reload-rules && udevadm trigger
