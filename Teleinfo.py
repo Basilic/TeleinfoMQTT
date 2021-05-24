@@ -3,7 +3,7 @@ import time
 import serial
 import paho.mqtt.client as mqtt
 ser = serial.Serial(
-        port='/dev/teleinfo',
+        port='/dev/teleinfo',           
         baudrate=1200,                  # 1200 bauds
         bytesize = serial.SEVENBITS,    # 7bits
         parity = serial.PARITY_EVEN,    # parite paire
@@ -15,14 +15,11 @@ def on_disconnect(mqtc, obj, rc):
     print("reconnecte")
     mqttc.reconnect()
 print("Lancement teleinfo")
-mqttc = mqtt.Client(client_id="teleinfo")
+mqttc = mqtt.Client(client_id="edf")
 mqttc.connect("127.0.0.1", 1883, 60)
 mqttc.loop_start()
 while 1:
     x = ser.readline()
-    print x
-#    x = x.decode(encoding='UTF-8').rstrip()
-
     try:
             c=x.split(' ')
             try:
