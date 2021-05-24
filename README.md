@@ -1,13 +1,13 @@
-# Project Title
+# TeleinfoMQTT
 ## Overview
 
 Ce dépôt est un backup de ma config pour intégrer la téléinformation dans HA.
 
-*Il contient les fichiers suivant:
+* Il contient les fichiers suivant:
 
-	*Teleinfo.py: Ce script qui permet de lire le port serie sur lequel il est configuré et d'envoyer l'intégralité des données dans un fil MQTT.
-	*teleinfo.service: Exemple de fichier a placé dans /etc/systemd/system pour démarrer le service au boot
-	*90-teleinfo.rules: permet de crée un lien symbolique au périphérique pour évité les mélanges, a placer dans /etc/udev/rules.d
+	* Teleinfo.py: Ce script qui permet de lire le port serie sur lequel il est configuré et d'envoyer l'intégralité des données dans un fil MQTT.
+	* teleinfo.service: Exemple de fichier a placé dans /etc/systemd/system pour démarrer le service au boot
+	* 90-teleinfo.rules: permet de crée un lien symbolique au périphérique pour évité les mélanges, a placer dans /etc/udev/rules.d
 
 
 ##Installation:
